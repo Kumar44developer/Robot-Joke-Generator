@@ -98,3 +98,5 @@ body{
     background-color: var(--accent-color);
     color: #fff;
     border-top-left-radius: 0px;
+    padding: 30px;
+}
