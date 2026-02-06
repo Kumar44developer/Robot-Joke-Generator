@@ -47,3 +47,5 @@ body{
     display: flex;
     align-items: center;
     margin: 20px;
+    color: var(--accent-color);
+}
