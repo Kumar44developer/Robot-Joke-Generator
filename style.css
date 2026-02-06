@@ -88,3 +88,4 @@ body{
     font-size: 16px;
     line-height: 25px;
     width: fit-content;
+    max-width: 450px;
