@@ -49,3 +49,6 @@ body{
     margin: 20px;
     color: var(--accent-color);
 }
+
+.header .avatar{
+    background-color: var(--accent-color);
