@@ -100,3 +100,6 @@ body{
     border-top-left-radius: 0px;
     padding: 30px;
 }
+
+.message.response{
+    background-color: #eee;
