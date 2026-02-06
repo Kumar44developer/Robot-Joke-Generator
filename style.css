@@ -56,3 +56,5 @@ body{
     padding: 5px;
     width: 50px;
     border-radius: 50%;
+    animation: pulseAvatar 1.5s infinite;
+}
