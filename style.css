@@ -73,3 +73,5 @@ body{
     margin-left: 20px;
     margin-right: auto;
     font-size: 24px;
+    color: var(--accent-color);
+}
