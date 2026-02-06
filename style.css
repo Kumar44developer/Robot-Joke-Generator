@@ -78,3 +78,5 @@ body{
 
 .chat{
     background-color: var(--chatbox-color);
+    height: 100%;
+    padding: 10px;
