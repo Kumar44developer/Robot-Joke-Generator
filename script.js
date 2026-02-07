@@ -20,3 +20,4 @@ async function generateJoke(){
             Accept:"application/json",
         },
     
+    if(res.ok){
