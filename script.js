@@ -23,3 +23,4 @@ async function generateJoke(){
     if(res.ok){
         const data = await res.json();
         console.log(data);
+        setElementContent(joke,data.joke);
