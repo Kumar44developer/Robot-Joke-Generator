@@ -30,5 +30,6 @@ async function generateJoke(){
 }
 
 function createMessageElement(content){
+    const element = document.createElement("div");
 
                             
