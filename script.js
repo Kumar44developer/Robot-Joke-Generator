@@ -13,3 +13,9 @@ async function generateJoke(){
     const joke = createMessageElement();
     setElementContent(joke,'<i class="fa-solid fa-ellipsis"></i>');
     appendMessage(joke);
+
+
+        headers:{
+            Accept:"application/json",
+        },
+    
