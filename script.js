@@ -9,3 +9,5 @@ async function generateJoke(){
 
     const message = createMessageElement("Hey Robot tell me a joke?");
     appendMessage(message);
+
+    const joke = createMessageElement();
