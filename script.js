@@ -14,6 +14,7 @@ async function generateJoke(){
     setElementContent(joke,'<i class="fa-solid fa-ellipsis"></i>');
     appendMessage(joke);
 
+    const res = await fetch("https://icanhazdadjoke.com",{
 
         headers:{
             Accept:"application/json",
