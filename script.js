@@ -11,3 +11,4 @@ async function generateJoke(){
     appendMessage(message);
 
     const joke = createMessageElement();
+    setElementContent(joke,'<i class="fa-solid fa-ellipsis"></i>');
