@@ -3,30 +3,37 @@ const chat = document.getElementById("_chat");
 const jokeBtn = document.getElementById("jokeBtn");
 generateJoke();
 jokeBtn.addEventListener("click",generateJoke);
+
 async function generateJoke(){
 
     jokeBtn.disabled = true;
 
-    const message = createMessageElement("Hey Robot tell me a joke?");
+    const message = createMessageElement("Hey Robot can you tell me a joke?");
     appendMessage(message);
 
     const joke = createMessageElement();
     setElementContent(joke,'<i class="fa-solid fa-ellipsis"></i>');
     appendMessage(joke);
 
-    const res = await fetch("https://icanhazdadjoke.com",{
-
-        headers:{
-            Accept:"application/json",
+    const res = await fetch("https://icanhazdadjoke.com", {
+        headers: {
+            Accept: "application/json",
         },
-    
+    });
+
     if(res.ok){
         const data = await res.json();
         console.log(data);
         setElementContent(joke,data.joke);
         jokeBtn.disabled = false;
+        chat.scrollTop = chat.scrollHeight;
     }  
 
+}
+
+function appendMessage(element){
+    chat.appendChild(element);
+    chat.scrollTop = chat.scrollHeight;
 }
 
 function createMessageElement(content){
@@ -42,10 +49,7 @@ function createMessageElement(content){
     return element;
 }
 
-function setElementContent(element,content){
-  element.innerHTML = content;
+function setElementContent(element, content){
+    element.innerHTML = content;
 }
 
-function appendMessage(element){
-   chat.appendChild(element);
-}
