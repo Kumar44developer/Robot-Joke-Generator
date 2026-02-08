@@ -47,3 +47,5 @@ function setElementContent(element,content){
 }
 
 function appendMessage(element){
+   chat.appendChild(element);
+}
