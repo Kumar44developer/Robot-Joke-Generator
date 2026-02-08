@@ -35,5 +35,6 @@ function createMessageElement(content){
     if(content){
         element.classList.add("response");
         setElementContent(element,content);
+    }else{
 
                             
