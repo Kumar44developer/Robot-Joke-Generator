@@ -41,3 +41,5 @@ function createMessageElement(content){
                             
     return element;
 }
+
+function setElementContent(element,content){
